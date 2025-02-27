@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+header{
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px  12%;
+    background-color:rgb(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.10s ease;
+}
+
+.logo:hover{
+    color: orangered;
+    text-shadow: 0 0 25px orangered, 0 0 25px orangered;/*contact shadow*/
+    transform: scale(1.1);/*use for zoom-in or zoom-out*/
+}
+
+span{
+    color:orangered;
+}
+
+.navbar a{
+    font-size: 15px;
+    color: white;
+    font-weight: 450;
+    margin: 0 25px;
+    border-bottom:3px solid transparent;
+    transition: 0.5s ease;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: orangered;
+    border-bottom: 3px solid orangered;
+}
+
+
+.contact{
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    font-size: 15px;
+    border-radius: 18px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.contact:hover{
+    background-color: orangered;
+    box-shadow: 0 0 25px orange;
+    color: white;
+}
+
+.home{
+   width: 100%;
+   min-height: 100vh;
+   background-color: rgb(241, 241, 241);
+   display: flex;
+   align-items: center;
+   gap: 7em;
+   padding: 30px 12% 0;
+}
+
+.home-content{
+    max-width: 800px;
+}
+
+.home-content h3{
+    font-size: 42px;
+}
+
+.home-content h1{
+    font-size: 35px;
+    line-height: 1.2;
+}
+
+.home-content p{
+    font-size: 18px;
+    margin: 25px 0 30px;
+    font-weight: 500;
+}
+
+.btn-box{
+    width: 320px;
+    display: flex;
+    gap: 2rem;
+}
+
+.btn-1{
+    padding: 15px 25px;
+    background-color: black;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-1:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+}
+
+.img-box img{
+    height: 300px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+ /* for srolling bar */
+ ::-webkit-scrollbar{
+    width: 25px;
+ }
+
+ ::-webkit-scrollbar-thumb{
+    background-color: orangered;
+ }
+
+::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0, 0.618);
+    width: 40px;
+}
+
+/* About section */
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    background-color: black;
+}
+
+.img-about img{
+    position: relative;
+    box-shadow: 0 0 25px whitesmoke, 0 0 25px whitesmoke;
+    height: 300px;
+    width: 250px;
+    border-radius: 45%;
+}
+
+.about-content h2{
+    text-align: left;
+    color: white;
+    font-size: 3rem;
+}
+
+.about-content h3{
+    font-size: 4rem;
+    color: white;
+}
+
+.about-content p{
+    color: white;
+    font-size: 2rem;
+    margin: 2em 0 3em;
+}
+
+/*========== project section =============*/
+.projects .projects-content{
+    text-align: center;
+    max-width: 50em;
+    margin: 1em auto;
+    margin-bottom: 3em;
+}
+.projects h2{
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 3rem;
+}
+
+.projects-container{
+    display: flex;
+
+}
+
+.projects-container .project-boxes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin: 1rem;
+}
+
+.project-boxes .project1{
+    background-color: rgb(228, 90, 21);
+    box-shadow: 0 2px 3px black;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.project-boxes .project2{
+    background-color: rgb(228, 90, 21);
+    box-shadow: 0 2px 3px black;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.project-boxes .project3{
+    background-color: rgb(228, 90, 21);
+    box-shadow: 0 2px 3px black;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.projects .application{
+    margin-bottom: 1em;
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.projects ul{
+    text-align: left;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.projects ul li{
+    margin-bottom: 1em;
+}
+
+/* =========== Skills section =========== */
+.skills .skills-content{
+    text-align: center;
+    max-width: 50em;
+    margin: 1em auto;
+    margin-bottom: 3em;
+
+}
+
+.skills-content h2{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 3rem;
+}
+
+.application{
+    font-size: 2rem;
+
+}
+
+.skills-content ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    background-color: blanchedalmond;
+    padding: 2rem;
+    box-shadow: 0 1px 2px rgb(200, 118, 18);
+    border-radius: 1rem;
+
+}
+
+.skills-content ul li{
+   font-size: 1.2rem;
+}
+
+
+
+/* =========== contact-form section ===========*/
+.contact-form form{
+    text-align: center;
+    max-width: 50em;
+    margin: 1rem auto;
+    margin-bottom: 3em;
+}
+
+.contact-form h2{
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+.contact-form form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-form form .input-box input,
+.contact-form form textarea{
+    width: 100%;
+    padding: 1.5em;
+    font-size: 18px;
+    color: black;
+    background-color: rgb(241, 241, 241);
+    border-radius: 0.8rem;
+    margin: 1rem 0;
+    resize: none;
+}
+
+/* footer section */
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: black;
+}
+
+.footer .social{
+    text-align: center;
+    padding: 24px;
+    color: rgb(250, 250, 250);
+}
+
+.footer .social a{
+    font-size: 30px;
+    color: white;
+    border: 2px solid orangered;
+    height: 40px;
+    width: 40px;
+    line-height: 45px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 45%;
+    box-shadow: inset 0 0 10px orangered, 0 0 10px orangered;
+    transition: 0.5s ease;
+}
+
+.footer .social a:hover{
+    transform: scale(1.2) translateY(-10px);
+    color: orangered;
+    border: 2px solid orangered;
+}
+
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a{
+    color: white;
+    border-bottom: 30px solid transparent;
+    transition: 0.5s ease;
+}
+
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
+
+
+
+
+
+
+
