@@ -168,7 +168,7 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
     padding: 12% 8%;
     gap: 10em;
     background-color: black;
@@ -226,7 +226,7 @@ span{
     display: block;
     justify-content: center;
     align-items: center;
-    padding: 10% 6%;
+    padding: 1rem .5rem;
     gap: 4em;
     background-color: rgb(241, 241, 241);
 }
@@ -248,34 +248,34 @@ span{
 
 .projects-container .project-boxes{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
-    padding: 1rem;
+    padding: 1rem 4rem;
 }
 
 .project-boxes .project1{
     background-color: rgb(228, 90, 21);
     box-shadow: 0 2px 3px black;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .project-boxes .project2{
     background-color: rgb(228, 90, 21);
     box-shadow: 0 2px 3px black;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .project-boxes .project3{
     background-color: rgb(228, 90, 21);
     box-shadow: 0 2px 3px black;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .projects .application{
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
     font-size: 2.2rem;
     font-weight: 500;
 }
@@ -287,7 +287,7 @@ span{
 }
 
 .projects ul li{
-    margin-bottom: 1em;
+    margin-bottom: .5em;
 }
 
 /* =========== Skills section =========== */
@@ -308,7 +308,7 @@ span{
 .skills-content h2{
     font-size: 3rem;
     text-align: center;
-    margin-top: 3em;
+    margin-top: 2em;
     margin-bottom: 1em;
     font-size: 3rem;
 }
@@ -350,8 +350,9 @@ span{
 }
 
 .contact-form h2{
+    font-size: 3rem;
     text-align: center;
-    margin-top: 3em;
+    margin-top: 2em;
     margin-bottom: 1em;
 }
 
@@ -364,21 +365,21 @@ span{
 .contact-form form .input-box input,
 .contact-form form textarea{
     width: 100%;
-    padding: 1.5em;
-    font-size: 18px;
+    padding: 1.2em;
+    font-size: 1.2rem;
     color: black;
     background-color: rgb(241, 241, 241);
     border-radius: 0.8rem;
-    /* margin: 1rem 0; */
+    margin: 1rem 0;
     resize: none;
 }
 
-/* footer section */
+/*============= footer section ================*/
 .footer{
     position: relative;
     bottom: 0;
     width: 100%;
-    padding: 40px 0;
+    padding: 2.6rem 0;
     background-color: black;
 }
 
