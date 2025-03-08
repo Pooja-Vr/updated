@@ -435,6 +435,54 @@ span{
 }
 
 
+/* ================ secreen size 968px =========== */
+@media only screen and (max-width: 968px) {
+
+
+    /* ======navbar ========== */
+    .navbar a{
+        font-size:.7rem;
+        font-weight: 450;
+        padding: 0 .5rem;
+        border-bottom:2px solid transparent;
+    }
+
+    .navbar a:hover,
+    .navbar a.active{
+       color: orangered;
+       border-bottom: 1px solid orangered;
+    }
+    /* ============= About section ==================*/
+.about{
+    gap: 6em;
+}
+
+.img-about img{
+    position: relative;
+    height: 300px;
+    width: 250px;
+    border-radius: 45%;
+}
+
+
+
+
+
+.contact{
+    padding:0.4rem .3rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+
+ 
+}
+
+
+
+
+
 
 /*========= media query ========*/
 @media (max-width: 768px) {
@@ -442,6 +490,12 @@ span{
         display: block;
 
     }
+
+    .navbar a:hover,
+.navbar a.active{
+    color: orangered;
+    border-bottom: 1px solid orangered;
+}
 
     .navbar {
         display: none;
@@ -519,9 +573,9 @@ span{
     display:block;
     justify-content: center;
     align-items: center;
-    padding: 12% 8%;
+    text-align: center;
+    padding:1.5rem 5rem;
     gap: 10em;
-    background-color: black;
 }
 
 .img-about img{
@@ -551,6 +605,43 @@ span{
     font-size: 1rem;
 
 }
+
+/* ================ project section ========== */
+.projects h2{
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 3rem;
+}
+
+.projects-container{
+    display: flex;
+
+}
+
+.projects-container .project-boxes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    padding: 1rem 4rem;
+}
+
+.project-boxes .project1{
+    padding: 2rem;
+}
+
+.project-boxes .project2{
+    padding: 2rem;
+}
+
+.project-boxes .project3{
+    padding: 2rem;
+}
+
+.project-boxes p{
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
 
 /* =========== Skills section =========== */
 .skills{
@@ -607,7 +698,7 @@ span{
     resize: none;
 }
 
-/* footer section */
+/*========== footer section ==========*/
 .footer{
     position: relative;
     bottom: 0;
@@ -665,9 +756,19 @@ span{
     color: white;
 }
 
+.scrolltop{
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 1rem;
+    padding: .4rem;
+    
+}
+
 
 
 }
+
+/* ================== screen size 468px =============== */
 
 @media (max-width: 468px) {
 
@@ -761,6 +862,31 @@ span{
 
 }
 
+/* ================ project section ========== */
+.projects h2{
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: .5em;
+    font-size: 2.4rem;
+}
+
+.projects-container{
+    display: flex;
+
+}
+
+.projects-container .project-boxes{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.5rem;
+}
+
+.project-boxes p{
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+
+
 /* =========== Skills section =========== */
 .skills{
     padding:1rem .5rem;
@@ -835,8 +961,29 @@ span{
     color: rgb(237, 91, 33);
 }
 
+.scrolltop{
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 1rem;
+    padding: .6rem;
+    
+}
 
 
+
+}
+
+.scrolltop{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: orangered;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    
 }
 
 
