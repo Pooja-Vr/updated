@@ -87,7 +87,6 @@ span{
 }
 
 .home{
-   width: 100vw;
    min-height: 80vh;
    background-color: rgb(241, 241, 241);
    display: flex;
@@ -149,7 +148,7 @@ span{
     border-radius: 50%;
 }
 
- /* for srolling bar */
+ /*=========== for srolling bar ==========*/
  ::-webkit-scrollbar{
     width: 1.2rem;
  }
@@ -527,7 +526,7 @@ span{
     /* =========== home ========== */
      
 .home{
-    width: 100vw;
+    /* width: 100vw; */
     min-height: 70vh;
     gap: 7em;
     display: block;
@@ -581,8 +580,8 @@ span{
 .img-about img{
     position: relative;
     top: 4rem;
-    height: 280px;
-    width: 220px;
+    height: 250px;
+    width: 200px;
 }
 
 .about-content h2{
@@ -675,8 +674,14 @@ span{
     margin-bottom: 2.5em;
 }
 
+.contact{
+    font-size: .8rem;
+}
+
+
 .contact-form h2{
     text-align: center;
+    font-size: 2rem;
     margin-top: 3em;
     margin-bottom: 1em;
 }
@@ -794,7 +799,7 @@ span{
 
     .contact{
         padding:0.3rem .2rem;
-        font-size: .6rem;
+        font-size: .5rem;
         font-weight: 300;
     }
 
@@ -839,7 +844,7 @@ span{
 .img-about img{
     position: relative;
     top: 2rem;
-    height: 210px;
+    height: 200px;
     width: 180px;
 }
 
@@ -867,7 +872,7 @@ span{
     text-align: center;
     margin-top: 2em;
     margin-bottom: .5em;
-    font-size: 2.4rem;
+    font-size: 1.5rem;
 }
 
 .projects-container{
@@ -899,7 +904,7 @@ span{
 }
 
 .skills-content h2{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .application{
@@ -919,6 +924,7 @@ span{
 }
 
 .contact-form h2{
+    font-size: 1.5rem;
     margin-top: 1.4em;
     margin-bottom: 1em;
 }
